@@ -14,11 +14,11 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ### Project Planning
 
-- [ ] Open up the Project Planning Document
-- [ ] Look over the "Inspiration and Ideas" section
-- [ ] Complete the "Let's Brainstorm" section.
-- [ ] Complete the "Trivia" section.
-- [ ] Update the json file with your own questions/answers.
+- [x] Open up the Project Planning Document
+- [x] Look over the "Inspiration and Ideas" section
+- [x] Complete the "Let's Brainstorm" section.
+- [x] Complete the "Trivia" section.
+- [x] Update the json file with your own questions/answers.
       <br>
 
 ---
