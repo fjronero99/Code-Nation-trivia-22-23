@@ -58,7 +58,7 @@ In the components folder:
 
 - [x] Create a new js file for a NextQuestion component (be sure to capitalize the first letter!)
 
-- [ ] Check that you have:
+- [x] Check that you have:
 
   - [x] Used the function keyword.
   - [x] Named the component Question.
@@ -84,13 +84,13 @@ In App.js:
 
 In the components folder:
 
-- [ ] Create a new js file for an AnswerChoices component (be sure to capitalize the first letter!)
+- [x] Create a new js file for an AnswerChoices component (be sure to capitalize the first letter!)
 - [ ] Check that you have:
 
-  - [ ] Used the function keyword.
-  - [ ] Named the component AnswerChoices.
-  - [ ] Included a return statement with an empty div that has a className of “answer-choice”.
-  - [ ] Exported the AnswerChoices component at the end.
+  - [x] Used the function keyword.
+  - [x] Named the component AnswerChoices.
+  - [x] Included a return statement with an empty div that has a className of “answer-choice”.
+  - [x] Exported the AnswerChoices component at the end.
 
 In the Question component:
 
