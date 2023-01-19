@@ -61,8 +61,8 @@ In the components folder:
 - [ ] Check that you have:
 
   - [x] Used the function keyword.
-  - [ ] Named the component Question.
-  - [] Included a return statement with a div that has a button element that has the content "Next Question" and a paragraph tag that says “Question #”.
+  - [x] Named the component Question.
+  - [x] Included a return statement with a div that has a button element that has the content "Next Question" and a paragraph tag that says “Question #”.
   - [x] Exported the NextQuestion component at the end.
   - [x] The component is imported to your App.js file.
 
