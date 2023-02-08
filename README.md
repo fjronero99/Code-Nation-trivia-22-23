@@ -85,7 +85,7 @@ In App.js:
 In the components folder:
 
 - [x] Create a new js file for an AnswerChoices component (be sure to capitalize the first letter!)
-- [ ] Check that you have:
+- [x] Check that you have:
 
   - [x] Used the function keyword.
   - [x] Named the component AnswerChoices.
