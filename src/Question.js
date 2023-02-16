@@ -9,8 +9,6 @@ function Question(props) {
       <AnswerChoices choiceNum={2} choice={props.choices[1]} />
       <AnswerChoices choiceNum={3} choice={props.choices[2]} />
       <AnswerChoices choiceNum={4} choice={props.choices[3]} />
-
-      <button onClick={NextQuestion}> Next Question </button>
     </div>
   );
 }

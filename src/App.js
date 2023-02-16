@@ -12,43 +12,33 @@ function App(props) {
     <div className="app">
       <h1 className="title">Trivia!</h1>
       <Question
-        text={data[0].question.text}
-        choices={data[0].question.choices}
+        text={data[currentQuestionNumber].question.text}
+        choices={data[currentQuestionNumber].question.choices}
       />
-      <NextQuestion />
+      <NextQuestion onClick={goToNextQuestion} />
     </div>
   );
 
+  function getCorrectAnswer(questionNum) {
+    let currentQuestion = Question[questionNum];
+    let correctChoiceIndex = currentQuestion.correctChoice;
 
-function getCorrectAnswer(questionNum) {
-  let currentQuestion = Question[questionNum];
-  let correctChoiceIndex = currentQuestion.correctChoice;
+    return currentQuestion.choices[correctChoiceIndex];
+  }
 
-  return currentQuestion.choices[correctChoiceIndex];
-}
+  function questionAnswered(answerState) {
+    if (answerState === null) {
+      return "Click an answer above. ";
+    } else if (answerState === "correct") {
+      return "That is correct!";
+    } else {
+      return "That is incorrect!";
+    }
+  }
 
-function questionAnswered(answerState)
-{
-if(answerState === null)
-{
-  return "Click an answer above. "
-} 
-else if (answerState === 'correct')
-{
-  return "That is correct!"
-}
-else
-{
-  return "That is incorrect!"
-}
-
-}
-
-function goToNextQuestion(setAnswerState)
-{
-  setCurrentQuestionNumber(currentQuestionNumber + 1);
-  setAnswerState(null);
-}
-
+  function goToNextQuestion(setAnswerState) {
+    setCurrentQuestionNumber(currentQuestionNumber + 1);
+    setAnswerDisplayed(null);
+  }
 }
 export default App;
