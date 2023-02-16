@@ -29,3 +29,7 @@ body {
   font-family: "Do Hyeon", sans-serif;
   font-size: 22px;
 }
+
+.answer-choice {
+  font-size: 35px;
+}

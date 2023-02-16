@@ -1,9 +1,5 @@
 function NextQuestion() {
-  return (
-    <div>
-      <button> Next Question </button>
-    </div>
-  );
+  return <div className="Nxt-Question"></div>;
 }
 
 export default NextQuestion;

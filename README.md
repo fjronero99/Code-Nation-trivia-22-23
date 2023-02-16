@@ -94,18 +94,18 @@ In the components folder:
 
 In the Question component:
 
-- [ ] Render an instance of `<AnswerChoices />` inside of `<Question />`.
-- [ ] Add a prop called `answer` to `<Answer />` with the value equal to "Answer choice goes here".
-- [ ] Be sure to pass your props into the `<Answer />` component.
+- [x] Render an instance of `<AnswerChoices />` inside of `<Question />`.
+- [x] Add a prop called `answer` to `<Answer />` with the value equal to "Answer choice goes here".
+- [x] Be sure to pass your props into the `<Answer />` component.
 
 In the App.js file:
 
-- [ ] Pass a prop for the answer choices in `<Question />`.
-  - [ ] We want to use the data from our json file!
+- [x] Pass a prop for the answer choices in `<Question />`.
+  - [x] We want to use the data from our json file!
 
 In the Question and AnswerChoices components:
 
-- [ ] Use those passed props so that the Answer components inside `<Question />` display the answer choices.
+- [x] Use those passed props so that the Answer components inside `<Question />` display the answer choices.
 
 > ![Day 2.0 goal](https://i.imgur.com/VpA8eRc.png)
 
@@ -115,27 +115,27 @@ In `<App />` (before the return statement):
 
 Declare state variables:
 
-- [ ] Refactor your currentQuestionNumber variable to a state variable. The value should remain 0.
-- [ ] Using `useState`, create a new variable called `answerDisplayed` and set it equal to a value of null. (This is to keep track of whether the correct answer is shown)
+- [x] Refactor your currentQuestionNumber variable to a state variable. The value should remain 0.
+- [x] Using `useState`, create a new variable called `answerDisplayed` and set it equal to a value of null. (This is to keep track of whether the correct answer is shown)
 
 Declare getCorrectAnswer function:
 
-- [ ] Create a function called getCorrectAnswer that takes questionNum as a parameter. Based on the data that's imported, this function should:
-  - [ ] Declare variables that represent the current question and correct choice index - assign their appropriate values.
-  - [ ] Return the correct choice of the current question.
+- [x] Create a function called getCorrectAnswer that takes questionNum as a parameter. Based on the data that's imported, this function should:
+  - [x] Declare variables that represent the current question and correct choice index - assign their appropriate values.
+  - [x] Return the correct choice of the current question.
 
 Declare questionAnswered function:
 
-- [ ] Create a function called questionAnswered. This function should have a conditional statement that includes:
-  - [ ] If the `answerState` is `null`, return a message that says "Click an answer above."
-  - [ ] If the `answerState` is correct, return a message that states what they chose is correct.
-  - [ ] Anything else, return a message that states what they chose is incorrect.
+- [x] Create a function called questionAnswered. This function should have a conditional statement that includes:
+  - [x] If the `answerState` is `null`, return a message that says "Click an answer above."
+  - [x] If the `answerState` is correct, return a message that states what they chose is correct.
+  - [x] Anything else, return a message that states what they chose is incorrect.
 
 Declare goToNextQuestion function:
 
-- [ ] Create a function called goToNextQuestion. This function should:
-  - [ ] Update the state of currentQuestionNum to itself plus 1.
-  - [ ] Updated the state of answerState to `null`.
+- [x] Create a function called goToNextQuestion. This function should:
+  - [x] Update the state of currentQuestionNum to itself plus 1.
+  - [x] Updated the state of answerState to `null`.
 
 <!-- > ![Day 2.5 goal - unanswered](https://i.imgur.com/JI6GroE.png) >![Day 2.5 goal - answered](https://i.imgur.com/rufYX84.png) -->
 

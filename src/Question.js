@@ -1,15 +1,16 @@
 import AnswerChoices from "./AnswerChoices";
+import NextQuestion from "./NextQuestion";
 
 function Question(props) {
   return (
     <div>
       <h1>{props.text}</h1>
-      <AnswerChoices text={props.choices[0]} text={props.choices[0]} />
-      <h2>
-        {" "}
-        1) {props.choices[0]} 2) {props.choices[1]} 3) {props.choices[2]} 4){" "}
-        {props.choices[3]}{" "}
-      </h2>
+      <AnswerChoices choiceNum={1} choice={props.choices[0]} />
+      <AnswerChoices choiceNum={2} choice={props.choices[1]} />
+      <AnswerChoices choiceNum={3} choice={props.choices[2]} />
+      <AnswerChoices choiceNum={4} choice={props.choices[3]} />
+
+      <button onClick={NextQuestion}> Next Question </button>
     </div>
   );
 }
