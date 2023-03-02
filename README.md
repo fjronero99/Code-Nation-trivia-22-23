@@ -149,15 +149,15 @@ Declare goToNextQuestion function:
 
 ### Goal 1: Add functionality to your "Next Question" button so that it renders the next question when clicked.
 
-- [ ] Create a prop on `<NextQuestion />` for your goToNextQuestion function.
-- [ ] Pass the prop down to the button element in that component so that it calls the goTonextQuestion function when the button is clicked.
-- [ ] Pass the prop down to the paragraph tag in that component so that it shows the current question number.
+- [x] Create a prop on `<NextQuestion />` for your goToNextQuestion function.
+- [x] Pass the prop down to the button element in that component so that it calls the goTonextQuestion function when the button is clicked.
+- [x] Pass the prop down to the paragraph tag in that component so that it shows the current question number.
 
 ### Goal 2: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
 
 Inside the `<App />` return statement:
 
-- [ ] Add props to `<Question />`. One that represents the answer choices and another for the answerState function.
+- [x] Add props to `<Question />`. One that represents the answer choices and another for the answerState function.
 - [ ] Check that every part of your Question and AnswerChoices components have their props passed.
 - [ ] Call the questionAnswered function.
 

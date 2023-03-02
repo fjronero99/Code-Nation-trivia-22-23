@@ -14,22 +14,23 @@ function App(props) {
       <Question
         text={data[currentQuestionNumber].question.text}
         choices={data[currentQuestionNumber].question.choices}
+        setAnswerDisplayed={setAnswerDisplayed}
       />
       <NextQuestion onClick={goToNextQuestion} />
+      {questionAnswered(answerDisplayed)}
     </div>
   );
 
   function getCorrectAnswer(questionNum) {
-    let currentQuestion = Question[questionNum];
-    let correctChoiceIndex = currentQuestion.correctChoice;
+    let currentQuestion = data[questionNum];
 
-    return currentQuestion.choices[correctChoiceIndex];
+    return currentQuestion.correct_choice_index;
   }
 
   function questionAnswered(answerState) {
     if (answerState === null) {
       return "Click an answer above. ";
-    } else if (answerState === "correct") {
+    } else if (answerState) {
       return "That is correct!";
     } else {
       return "That is incorrect!";

@@ -1,8 +1,11 @@
 function AnswerChoices(props) {
-  return (
-    <div className="answer-choice">
-      {props.choiceNum}) {props.choice}
-    </div>
+  function updateAnswerState(){
+    props.setAnswerDisplayed(props.choiceNum - 1);
+  }
+  return(
+    <div className="answer-choice" onClick={updateAnswerState}>
+    {props.choiceNum}) {props.choice} 
+  </div>
   );
 }
 
