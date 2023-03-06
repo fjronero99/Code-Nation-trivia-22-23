@@ -16,7 +16,11 @@ function App(props) {
         choices={data[currentQuestionNumber].question.choices}
         setAnswerDisplayed={setAnswerDisplayed}
       />
-      <NextQuestion onClick={goToNextQuestion} />
+      <NextQuestion
+        onClick={goToNextQuestion}
+        currentQuestionNumber={currentQuestionNumber}
+        goToNextQuestion={goToNextQuestion}
+      />
       {questionAnswered(answerDisplayed)}
     </div>
   );
